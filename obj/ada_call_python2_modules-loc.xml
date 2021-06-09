@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github/wruslanump/ada-call-python2-modules/ada_call_python2_modules.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslanump/ada-call-python2-modules/src/main_ada_call_python2_modules.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 5" line=" 3" >
+      <vfs_project />
+      <vfs_file>/home/wruslan/github/wruslanump/ada-call-python2-modules/src/python-modules/python_module_01.py</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 51" line=" 24" >
+      <vfs_project />
+      <vfs_file>/home/wruslan/github/wruslanump/ada-call-python2-modules/src/python-modules/python_main.py</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

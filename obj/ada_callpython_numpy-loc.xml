@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project >
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github/wruslanump/ada-call-python2-modules/ada_callpython_numpy.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslanump/ada-call-python2-modules/src/main_ada_callpython_numpy.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 46" line=" 30" >
+      <vfs_project>/home/wruslan/github/wruslanump/ada-call-python2-modules/ada_callpython_numpy.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslanump/ada-call-python2-modules/src/main_ada_callpython_numpy.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github/wruslanump/ada-call-python2-modules/ada_callpython_numpy.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslanump/ada-call-python2-modules/src/pkg-ada-callpython-module/pkg_ada_callpython_module.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

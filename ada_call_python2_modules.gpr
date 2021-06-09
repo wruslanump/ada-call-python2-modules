@@ -1,0 +1,46 @@
+-- =======================================================
+project ada_call_python2_modules is
+-- =======================================================
+   
+  -- ======== LANGUAGES ==================================
+   -- for Languages   use ("Ada", "C", "C++");
+   -- for Languages   use ("Ada", "C");
+   for Languages   use ("Ada");
+   
+   -- ======== DIRECTORIES ================================
+   for Source_Dirs use ("src/**");  -- Covers every subdirectory in src
+   for Object_Dir  use "obj";       -- NOTE: No parantheses
+   for Exec_Dir    use "exec";      -- NOTE: No parantheses
+   
+   -- ======== MAIN PROGRAM ===============================
+   for Main     use ("main_ada_call_python2_modules.adb");
+   
+   -- ======== BUILDER GPRBUILD ===========================
+   package Builder is
+      for Executable ("main_ada_call_python2_modules.adb") 
+                  use "main_ada_call_python2_modules.adx";  -- NO PARANTHESES
+   end Builder;
+   
+   -- ======== FILE NAMING ================================
+   package Naming is
+      for Spec_Suffix ("Ada") use ".ads";
+      for Body_Suffix ("Ada") use ".adb";
+      -- for Spec_Suffix ("C")   use ".h";
+      -- for Body_Suffix ("C")   use ".c";
+      -- for Spec_Suffix ("C++") use ".hpp";
+      -- for Body_Suffix ("C++") use ".cpp";
+   end Naming;
+
+   package Linker is
+      -- for Default_Switches ("Ada") use ("-lpython2.7");                 -- THIS WORKS
+      -- for Default_Switches ("Ada") use ("-lpython2.7", "-lpython3.8");  -- THIS WORKS
+      -- for Default_Switches ("Ada") use ("-lpython2.7", "-lpython3.9");  -- THIS WORKS
+      -- for Default_Switches ("Ada") use ("-lpython3.8", "-lpython2.7");  -- THIS FAILS
+      -- for Default_Switches ("Ada") use ("-lpython3.9", "-lpython2.7");  -- THIS FAILS
+      for Default_Switches ("Ada") use ("-lpython2.7", "-lpython3.8", "-lpython3.9");  -- THIS WORKS
+      
+   end Linker;
+   
+-- =======================================================
+end ada_call_python2_modules;
+-- =======================================================
